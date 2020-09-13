@@ -84,3 +84,17 @@ jobs:
        env:
          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  Analyzer2:
+    name: Analyzer2
+    runs-on: ubuntu-latest
+    steps:
+     - name: sonarscan-dotnet
+       uses: highbyte/sonarscan-dotnet@1.0
+       with:
+         # The key of the SonarQube project
+         sonarProjectKey: luigi2407_test
+         # The name of the SonarQube project
+         sonarProjectName: test
+         # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
+         sonarOrganization: luigi2407

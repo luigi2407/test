@@ -64,3 +64,13 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          
+      - name: dotnet-sonarcloud-analysis
+        uses: spoland/dotnet-sonarcloud-analysis@v1.0
+        with:
+          # Specifies the key of the analyzed project in SonarCloud
+          project-key: luigi2407_test
+          # Specifies the SonarCloud organization
+          sonar-organization: luigi2407
+          # Specifies the access token to authenticate with to SonarCloud
+          sonar-host-url: https://sonarcloud.io

@@ -65,6 +65,13 @@ jobs:
         run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
           
+  Analyzer:
+    name: Analyzer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis          
       - name: dotnet-sonarcloud-analysis
         uses: spoland/dotnet-sonarcloud-analysis@v1.0
         with:
@@ -74,3 +81,4 @@ jobs:
           sonar-organization: luigi2407
           # Specifies the access token to authenticate with to SonarCloud
           sonar-host-url: https://sonarcloud.io
+

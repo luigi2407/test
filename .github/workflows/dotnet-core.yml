@@ -69,6 +69,9 @@ jobs:
     name: Analyzer
     runs-on: ubuntu-latest
     steps:
+     - uses: actions/checkout@v2
+       with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
      - name: Sonarscanner for dotnet
        uses: Secbyte/dotnet-sonarscanner@v2.3
        with:
@@ -89,6 +92,9 @@ jobs:
     name: Analyzer2
     runs-on: ubuntu-latest
     steps:
+     - uses: actions/checkout@v2
+       with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
      - name: sonarscan-dotnet
        uses: highbyte/sonarscan-dotnet@1.0
        with:
@@ -98,3 +104,6 @@ jobs:
          sonarProjectName: test
          # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
          sonarOrganization: luigi2407
+       env:
+         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

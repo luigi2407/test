@@ -1,0 +1,9 @@
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\Test.RazorTargetAssemblyInfo.cache
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\staticwebassets\Test.StaticWebAssets.Manifest.cache
+C:\Users\luigi.lazaro\source\repos\test\Test\Test\obj\Debug\netcoreapp3.1\staticwebassets\Test.StaticWebAssets.xml
